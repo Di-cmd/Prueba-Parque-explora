@@ -10,9 +10,13 @@ export default function Home({data}) {
     data.map((post)=>(
         <div key={post.id}>
 
-          <div className={styles.card} >
-          <h3>{post.title.rendered}</h3>
+          <div className={styles.index}>
+          
+            <div  className={styles.card}>
+            <h3>{post.title.rendered}</h3>
             <div  dangerouslySetInnerHTML={{__html: post.content.rendered}} />
+            </div>
+           
           </div>
          
           </div>
