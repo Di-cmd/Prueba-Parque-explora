@@ -14,12 +14,15 @@ export default function navigation() {
           formData[field.name]=field.value;
         });
 
-        //Este fectch permite guardar el correo electronico
-        fetch('/api/mail',{
+        //Este fectch permite guardar el correo electronico y lo muestra en consola
+        fetch('/api/mail',
+        {
             method:'post',
             body:JSON.stringify(formData)
 
         })
+
+        //este console  log permite verificar la informacion optenida del formulario
         console.log("Captura los datos del formulario",formData);
         }
 
@@ -50,7 +53,7 @@ export default function navigation() {
         <Image src="/img/fondo2.png" width={1500} height={600}></Image>
 
         <div className={styles.textfloat}>
-          <h1>¿Cuáles son los objetivos de estos encuentros?</h1>
+          <h1  className={styles.titulos} >¿Cuáles son los objetivos de estos encuentros?</h1>
 
           <div>
             <Image src="/img/uno.png" width={50} height={50}></Image>
@@ -85,24 +88,24 @@ export default function navigation() {
         <Image
           className={styles.caract}
           src="/img/caracteristicauno.png"
-          width={150}
-          height={150}
+          width={300}
+          height={300}
         ></Image>
 
         <Image
           className={styles.caract}
           src="/img/caracteristicados.png"
-          width={150}
-          height={150}
+          width={300}
+          height={300}
         ></Image>
         <Image
           className={styles.caract}
           src="/img/caracteristicatres.png"
-          width={150}
-          height={150}
+          width={300}
+          height={300}
         ></Image>
         <div className={styles.div2}>
-          <h1>Características: </h1>
+          <h1  className={styles.titulos} >Características: </h1>
           <p>Para estudiantes de 1 a 11 </p>
           <p>Incluye viaje por el universo + actividad experimental</p>
           <p>Grupos de 20 personas acompañados por un mediador</p>
@@ -112,13 +115,14 @@ export default function navigation() {
       </div>
 
       <div>
-        <h1>¿Quieres más información? Déjanos tus datos y te contactaremos</h1>
+        <h1  className={styles.titulos} >¿Quieres más información? Déjanos tus datos y te contactaremos</h1>
+        <div className={styles.div3}>
         <form className={styles.form} method="post" onSubmit={handleOnSubmit}>
-          <input type="Text" name="title" placeholder="Nombre"></input>
+          <input type="Text" name="nombre" placeholder="Nombre"></input>
 
-          <input type="number" name="title" placeholder="cedula"></input>
+          <input type="number" name="cedula" placeholder="cedula"></input>
 
-          <input type="phone" name="title" placeholder="Telefono"></input>
+          <input type="phone" name="telefono" placeholder="Telefono"></input>
 
           <input
             type="email"
@@ -134,6 +138,8 @@ export default function navigation() {
 
           <button type="submit">enviar</button>
         </form>
+        </div>
+        
       </div>
     </Layout>
   );

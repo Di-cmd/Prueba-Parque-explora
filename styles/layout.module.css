@@ -106,6 +106,7 @@
   
   /* Add some padding inside the card container */
   .container {
+      margin-left: 15px;
     background-image: radial-gradient(circle at 50% -20.71%, #a4d8ec 0, #a7d7ef 6.25%, #abd6f1 12.5%, #b0d5f3 18.75%, #b5d3f4 25%, #bbd2f4 31.25%, #c1d0f4 37.5%, #c7cff3 43.75%, #cdcdf2 50%, #d3cbf0 56.25%, #d9caed 62.5%, #dec8ea 68.75%, #e3c7e7 75%, #e8c6e3 81.25%, #ecc5df 87.5%, #efc4da 93.75%, #f2c4d6 100%);
     padding: 2px 16px;
     font-weight: bold;
@@ -113,16 +114,48 @@
   }
 .caract{
     margin-left: 10px;
-    width: max-content;
+    width:500px;
 }
 
     
 .form{
-    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width:700px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
-    
-
+    align-content: center;
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
+
+.titulos{
+    color: #6f42ce;
+    text-align: center;
+}
+
+.div3{
+    text-align: center;
+}
+
+.quienes{
+    width: 1200px;
+    text-align: justify;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 5%;
+}
+
+.imgQuienes{
+    height: 800px;
+  
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+

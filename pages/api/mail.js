@@ -1,7 +1,28 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res)=> {
-  const body=JSON.parse(req.body);
-  console.log(body);
-  res.status(200).json({ status:'ok' });
+
+
+const sgMail = require('@sendgrid/mail')
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+const msg = {
+  to: 'test@example.com', // Change to your recipient
+  from: 'test@example.com', // Change to your verified sender
+  subject: 'Sending with SendGrid is Fun',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 }
+sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Email sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
+
+  res.status(200).json({ status:'ok' });
+
+
+
+
+
