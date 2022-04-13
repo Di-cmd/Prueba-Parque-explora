@@ -12,12 +12,8 @@ export default function about({data}){
         {
     data.map((post)=>(
         <div key={post.id}>
-            <card>
+          
             <h3>{post.title.rendered}</h3>
-          <h3> {post.url}</h3>
-          {/* <div dangerouslySetInnerHTML={post.content.rendered}></div> */}
-
-                </card>
          
           </div>
           
