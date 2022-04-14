@@ -8,10 +8,10 @@ import DatosApi from "./datosApi"
 
 
 export default function Home({ data}) {
-  const dateToFormat = new Date("1976-04-19T12:59-0500");
-  <Moment date={dateToFormat} />;
-  var fechaInicio = new Date("2016-07-1").getTime();
-  var fechaFin = new Date("2016-08-01").getTime();
+  // const dateToFormat = new Date("1976-04-19T12:59-0500");
+  // // <Moment date={dateToFormat} />;
+  var fechaInicio = new Date(data.date_gmt).getTime();
+  var fechaFin = new Date("2022-03-01").getTime();
 
   var diff = fechaFin - fechaInicio;
 
