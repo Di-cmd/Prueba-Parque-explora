@@ -6,6 +6,27 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.container{
+  margin: 20px;
+}
+
+.logo-tigo{
+  height: 80px;
+}
+
+.swiper-slide-image{
+  width: 70%;
+}
+.elementor-image-carousel{
+  /* display: none; */
+}
+.elementor-image{
+  display: none;
+}
+.logo-explora{
+  height: 80px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
