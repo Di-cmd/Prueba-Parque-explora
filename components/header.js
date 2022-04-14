@@ -15,7 +15,7 @@ export default function Header() {
       <navbar className={styles.navbar}>
         <menu>
           <Link href="/">
-            <a className={styles.Link}>Home</a>
+            <a className={styles.Link}>Inicio</a>
           </Link>
           <Image
             src="/img/casa.png"

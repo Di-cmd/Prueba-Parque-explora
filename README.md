@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Prueba Front
+Presentado por: Diana Catalina Salazar G.
+Email: dianac.salazarg@gmai.com
 
-## Getting Started
+## Descargar del repositorio:
+Para descargar el proyecto del repositorio.
+- Se crea una carpeta en el escritorio.
+- Se abre la terminal de git Bash.
+- Se clona el repositorio con el comando:
+- git clone --branch developer https://github.com/Di-cmd/Prueba-Parque-explora.git
+- Una vez clonado el repositorio: se abre el proyecto en visual studio code
+- se instalan los node_modules con: npm i
+- Una vez se instalan los node_modules se ejecuta el aplicativo con el comando:  npm run dev.
+- La aplicación se ejecuta en el puerto 3000  localhost:3000.
 
-First, run the development server:
+## Importante:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Para que se muestre de forma correcta los datos optenidos de la prueba backend, es necesario ejecutar los dos proyectos 
+al mismo tiempo. Para que la API funcione.
+Ejecutar los dos proyectos al mismo tiempo no trate ningun tipo de conflicto, ya que funcionan en puertos diferentes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Estructura General:
+La aplicacion fue creada en React, implementando el framework Next.js
+La estructura de carpetas se compone de: 
+- components:
+Donde se encuentra el header, footer y layout que permiten que todas las vistas cuenten con estos componentes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Pages:
+Se encuentran las diferentes vistas de la aplicación: en donde about.js corresponde a la vista de Quienes somos?
+El archivo navigation.js corresponde a la vista de Explora.
+El archivo de index.js corresponde a la vista de Inicio.
+El archivo datosApi.js corresponde a la vista donde se visualizan los datos optenidos de la prueba Backend.
+Se encuentra la carpeta api, la cual contiene el archivo de la api, con la cual se intento hacer el servicio de enviar un correo electronico.
 
-## Learn More
+- public: 
+En esta carpeta se encuentra la carpeta de img, la cual contiene todas las imagenes utilizadas en el aplicativo.
 
-To learn more about Next.js, take a look at the following resources:
+- carpeta de styles:
+En esta carpeta se encuentran las hojas de estilo, la mas utilizada se llama layout.module.css.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Nota: Para el formulario fue posible capturar los datos registrados. pero una falla al unirno a la api no permite el envio del correo electronico. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
