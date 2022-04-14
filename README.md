@@ -40,7 +40,7 @@ En esta carpeta se encuentra la carpeta de img, la cual contiene todas las image
 - carpeta de styles:
 En esta carpeta se encuentran las hojas de estilo, la mas utilizada se llama layout.module.css.
 
-Nota: Para el formulario fue posible capturar los datos registrados. pero una falla al unirno a la api no permite el envio del correo electronico. 
+Nota: Para el formulario fue posible capturar los datos registrados. pero una falla al unirlo a la api, no permite el envio del correo electronico. 
 
 
 
